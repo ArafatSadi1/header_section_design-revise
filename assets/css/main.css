@@ -193,6 +193,10 @@ button {
   font-size: 18px;
   color: var(--color2);
 }
+.header_right_btn_icon {
+  width: 8px;
+  height: 8px;
+}
 .header_right_btn_icon_sp {
   width: 22px;
   height: 22px;
@@ -265,7 +269,7 @@ button {
     gap: 32px;
   }
   .navbar_login_btn {
-    font-size: 12px;
+    font-size: 14px;
   }
   .navbar_signup_btn {
     width: 100px;
@@ -296,6 +300,10 @@ button {
   .header_btn_right {
     gap: 9px;
     font-size: 14px;
+  }
+  .header_right_btn_icon {
+    width: 7px;
+    height: 7px;
   }
   .header_right_btn_icon_sp {
     width: 16px;
@@ -342,6 +350,7 @@ button {
   }
   .header_btn_wrapper {
     margin-top: 28px;
+    gap: 25px;
   }
   .header_dashboard_img_wrapper {
     margin-bottom: 60px;
@@ -403,6 +412,10 @@ button {
     font-size: 10px;
     gap: 7px;
   }
+  .header_right_btn_icon {
+    width: 5px;
+    height: 5px;
+  }
   .header_right_btn_icon_sp {
     width: 12px;
     height: 12px;
@@ -444,6 +457,10 @@ button {
     font-size: 9px;
     gap: 6px;
   }
+  .header_right_btn_icon {
+    width: 4px;
+    height: 4px;
+  }
   .header_right_btn_icon_sp {
     width: 11px;
     height: 11px;
@@ -464,7 +481,7 @@ button {
   }
   .header_btn_wrapper {
     margin-top: 15px;
-    gap: 16px;
+    gap: 14px;
   }
   .header_btn_left {
     width: 80px;
