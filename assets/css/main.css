@@ -191,7 +191,6 @@ button {
 }
 .header_btn_right:hover {
   border-bottom: 1px solid var(--bg2);
-  transition: 0.3s;
 }
 .header_right_btn_icon {
   width: 22px;
@@ -405,7 +404,7 @@ button {
   }
   .header_title_wrapper {
     width: fit-content;
-    padding-top: 40px;
+    padding-top: 30px;
   }
   .header_title {
     font-size: 36px;
@@ -437,6 +436,9 @@ button {
   }
 }
 @media only screen and (max-width: 375px) {
+  .header_title_wrapper {
+    padding-top: 20px;
+  }
   .header_title {
     font-size: 32px;
     line-height: 38px;
