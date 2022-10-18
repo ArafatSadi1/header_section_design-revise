@@ -68,18 +68,6 @@ button {
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-/* hero section design start */
-.header_wrapper {
-  background-color: var(--bg1);
-  padding-top: 32px;
-}
-.nav_logo {
-  width: 96px;
-  height: 34px;
-}
-.nav_link_wrapper {
-  gap: 48px;
-}
 ._toggler {
   box-shadow: none !important;
   border: none !important;
@@ -94,6 +82,18 @@ button {
   transition: 0.1s all ease-in-out;
   max-width: 18px;
 }
+/* hero section design start */
+.header_wrapper {
+  background-color: var(--bg1);
+  padding-top: 32px;
+}
+.nav_logo {
+  width: 96px;
+  height: 34px;
+}
+.nav_link_wrapper {
+  gap: 48px;
+}
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 0px;
 }
@@ -101,11 +101,11 @@ button {
   font-family: "Plus Jakarta Sans";
   font-weight: 400;
   font-size: 16px;
-  color: var(--color1);
+  color: var(--color1) !important;
+  transition: 0.3s all ease-in-out;
 }
 .single_navItem_link:hover {
-  color: var(--bg2);
-  transition: 0.3s;
+  color: var(--bg2) !important;
 }
 .navbar_btn_wrapper {
   display: flex;
@@ -116,11 +116,12 @@ button {
   font-family: "Plus Jakarta Sans";
   font-weight: 600;
   font-size: 16px;
-  color: var(--color2);
+  line-height: 1.2;
+  color: var(--color2) !important;
+  transition: 0.3s all ease-in-out;
 }
 .navbar_login_btn:hover {
-  color: var(--bg2);
-  transition: 0.3s;
+  color: var(--bg2) !important;
 }
 .navbar_signup_btn {
   width: 117px;
@@ -140,7 +141,7 @@ button {
 }
 .header_title_wrapper {
   padding-top: 90px;
-  padding-bottom: 65%;
+  padding-bottom: 72%;
 }
 .header_title {
   font-family: "Plus Jakarta Sans";
@@ -189,8 +190,9 @@ button {
   align-items: center;
   gap: 12px;
 }
-.header_btn_right:hover {
-  border-bottom: 1px solid var(--bg2);
+.header_btn_right:hover img {
+  transition: 0.2s all ease-in-out;
+  transform: scale(1.1);
 }
 .header_right_btn_icon {
   width: 22px;
@@ -204,6 +206,7 @@ button {
 }
 .header_dashboard_img_wrapper {
   margin-top: -35%;
+  margin-bottom: 100px;
 }
 /* responsive css */
 /* Desktop/Laptop */
@@ -296,6 +299,9 @@ button {
   .header_right_btn_text {
     font-size: 14px;
   }
+  .header_dashboard_img_wrapper {
+    margin-bottom: 80px;
+  }
 }
 /* Ipad pro */
 @media only screen and (max-width: 991px) {
@@ -310,7 +316,10 @@ button {
     margin-top: 25px;
   }
   .header_title_wrapper {
-    padding-bottom: 45%;
+    padding-bottom: 52%;
+  }
+  .header_dashboard_img_wrapper {
+    margin-bottom: 70px;
   }
 }
 /* Ipad/Mobile L */
@@ -323,7 +332,7 @@ button {
   }
   .header_title_wrapper {
     padding-top: 60px;
-    padding-bottom: 40%;
+    padding-bottom: 44%;
   }
   .header_title {
     font-size: 50px;
@@ -331,6 +340,9 @@ button {
   }
   .header_btn_wrapper {
     margin-top: 28px;
+  }
+  .header_dashboard_img_wrapper {
+    margin-bottom: 60px;
   }
 }
 /* Mobile */
@@ -365,6 +377,7 @@ button {
     width: 410px;
     margin: auto;
     padding-top: 50px;
+    padding-bottom: 42%;
   }
   .header_title {
     font-size: 40px;
@@ -393,6 +406,9 @@ button {
   }
   .header_right_btn_text {
     font-size: 10px;
+  }
+  .header_dashboard_img_wrapper {
+    margin-bottom: 50px;
   }
 }
 @media only screen and (max-width: 420px) {
